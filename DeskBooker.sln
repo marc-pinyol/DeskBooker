@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core.Tests", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{69DBD388-8733-4673-BB38-768B6864585A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core", "DeskBooker.Core\DeskBooker.Core.csproj", "{45FFD4F9-D84B-4810-A9EA-2BEFA1E8BD59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69DBD388-8733-4673-BB38-768B6864585A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DBD388-8733-4673-BB38-768B6864585A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DBD388-8733-4673-BB38-768B6864585A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DBD388-8733-4673-BB38-768B6864585A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FFD4F9-D84B-4810-A9EA-2BEFA1E8BD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FFD4F9-D84B-4810-A9EA-2BEFA1E8BD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FFD4F9-D84B-4810-A9EA-2BEFA1E8BD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FFD4F9-D84B-4810-A9EA-2BEFA1E8BD59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9CCB523-8E45-4817-ACF3-6B7A68005B4F}
+	EndGlobalSection
+EndGlobal
