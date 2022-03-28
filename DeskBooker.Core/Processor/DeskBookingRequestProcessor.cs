@@ -20,14 +20,20 @@ namespace DeskBooker.Core.Processor
                 throw new ArgumentNullException(nameof(request));
 
             var availableDesks = _deskRepository.GetAvailableDesks(request.Date);
+
+            var result = Create<DeskBookingResult>(request);
+
             if (availableDesks.FirstOrDefault() is Desk availableDesk)
             {
                 var deskBooking = Create<DeskBooking>(request);
                 deskBooking.DeskId = availableDesk.Id;
                 _deskBookingRepository.Save(deskBooking);
+                result.Code = DeskBookingResultCode.Success;
             }
+            else
+                result.Code = DeskBookingResultCode.NoDeskAvailable;
 
-            return Create<DeskBookingResult>(request);
+            return result;
         }
 
         private static T Create<T>(DeskBookingRequest request) 
