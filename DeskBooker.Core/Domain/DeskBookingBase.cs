@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using DeskBooker.Core.Validation;
 
 namespace DeskBooker.Core.Domain;
 
@@ -18,5 +19,7 @@ public class DeskBookingBase
     public string Email { get; set; }
     
     [DataType(DataType.Date)]
+    [DateInFuture]
+    [DateWithoutTime]
     public DateTime Date { get; set; }
 }
