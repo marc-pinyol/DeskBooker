@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using DeskBooker.Core.DataInterface;
 using DeskBooker.Core.Domain;
 
@@ -17,5 +19,10 @@ public class DeskBookingRepository : IDeskBookingRepository
     {
         _context.DeskBooking.Add(deskBooking);
         _context.SaveChanges();
+    }
+
+    public IEnumerable<DeskBooking> GetAll()
+    {
+        return _context.DeskBooking.OrderBy(x => x.Date).ToList();
     }
 }
